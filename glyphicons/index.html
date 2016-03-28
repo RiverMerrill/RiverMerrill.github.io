@@ -1,0 +1,23 @@
+<html ng-app="app2">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Glyphicons</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+
+<body class="container" ng-controller="MainController2 as vm">
+	<input ng-model="vm.search"></input>
+	<div ng-repeat="icon in vm.glyphicons | filter:vm.search">
+		<div class="col-md-3">
+			<span style="margin-left: 20%"class="glyphicon {{icon}}"></span>
+			<p>{{icon}}</p>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

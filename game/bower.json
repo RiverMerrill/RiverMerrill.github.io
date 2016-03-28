@@ -1,0 +1,21 @@
+{
+  "name": "game",
+  "homepage": "https://github.com/RiverMerrill/RiverMerrill.github.io",
+  "authors": [
+    "River Merrill <rivermerrill.me@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9"
+  }
+}
